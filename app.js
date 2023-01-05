@@ -7,7 +7,7 @@ const userRouter = require("./routes/user");
 
 const app = express();
 
-mongoose.set('strictQuery', true);
+mongoose.set('strictQuery', false);
 
 mongoose.connect("mongodb+srv://Tanmoy23:" + process.env.MONGO_ATLAS_PASSWORD + "@cluster0.ued66gq.mongodb.net/node-angular?retryWrites=true&w=majority")
 .then(() => {
